@@ -1,0 +1,33 @@
+package fsj.p3;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class controller {
+    @GetMapping("/name")
+    public String hello() {
+        return "Sasi_Kanakinti";
+    }
+    @GetMapping("/job")
+    public String proffession() {
+        return "Student";
+    }
+    @GetMapping("/hobby")
+    public String hobby() {
+        return "Reading";
+    }
+    @GetMapping("/experience")
+    public String exp()
+   	{
+   		return "None";
+   	}
+    @GetMapping("/projects")
+    public String proj() {
+    	return "Expense Tracker\nBlog\nSignUpForm";
+    }
+    @GetMapping("/address")
+    public String add() {
+    	return "Tirupati";
+    }
+}
